@@ -1,14 +1,15 @@
-#펠린드롬수 
+# 펠린드롬수
+
 while True:
-    n = list(input)
-    if n == '0':
+    nums = list(input())
+    mid = len(nums)//2
+    
+    if not int(nums[0]):
         break
+    if len(nums) % 2:
+        del nums[mid]
 
-    myStack = []
-    result = False
-
-    if n%2==1:
-        del n[(n//2)+1]
-
-    for i in range(p):
-        myStack.append(n[i])
+    if nums[:mid] == nums[mid:][::-1]:
+        print('yes')
+    else:
+        print('no')
