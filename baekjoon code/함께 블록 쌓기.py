@@ -20,27 +20,28 @@ input = sys.stdin.readline
 n,m,h = map(int,input().split())
 
 dp = [[0 for _ in range(h+1)] for _ in range(n+1)]
-blocks = [list(map(int,input().split())) for _ in range(n)]
-# print(dp)
+blocks = [list(map(int,input().split())) for _ in range(n)]  # 학생들 블록목록
 
-# init 
+# init 1
 for i in range(0, n+1):
     dp[i][0] = 1
-
+# init 2
 for b in blocks[0]:
     dp[1][b] = 1
 
-for i in range(2,n+1):
-    for j in range(1,h+1):
 
-        for bk_h in blocks[i-1]:
-            before = j-bk_h
+
+for i in range(2,n+1):  # 2번째 학생부터
+    for j in range(1,h+1):  # 1~h 높이까지 
+
+        for block_height in blocks[i-1]: # 해당 라인에 학생이 가진 블록을 탐색
+            before = j-block_height      # 높이 - 학생이 가진 블록 높이 
             if before >= 0:  # and dp[i-1][before] != 0
                 dp[i][j] += dp[i-1][before]
         
-        dp[i][j] += dp[i-1][j]
+        dp[i][j] += dp[i-1][j]  # 이전에 기억한 값 사용 
 
-for d in dp:
-    print(*d)
+# for d in dp:
+#     print(*d)
 
 print(dp[-1][-1] % 10007)
