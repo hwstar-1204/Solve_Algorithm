@@ -1,23 +1,19 @@
 from collections import defaultdict
 def solution(tickets):
     answer = []
-    place_dict = defaultdict(list)
+    graph = defaultdict(list)
     
-    for ticket in tickets:
-        s,e = ticket
-        place_dict[s].append(e)            
-    
-    for i in place_dict.values():
-        i.sort(reverse=True)
+    for s, e in tickets:
+        graph[s].append(e)
+        
+    graph = {k: sorted(v) for k, v in graph.items()}
     
     stack = ['ICN']
     while stack:
-        start = stack.pop()
-        answer.append(start)
-        
-        goto_list = place_dict[start]
-        stack += goto_list
-        if place_dict[start]:
-            place_dict[start].pop()
-        
-    return answer
+        current = stack[-1]  # 현재 공항
+        if current not in graph or len(graph[current]) == 0:
+            answer.append(stack.pop())
+        else:
+            stack.append(graph[current].pop(0))  # 다음 공항
+
+    return answer[::-1]  # 역순으로 반환
