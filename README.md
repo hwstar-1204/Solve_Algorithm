@@ -1,8 +1,8 @@
-# baekjoon
-Personal Algorithm Study
+# Personal Algorithm Study
 
-- AlgoDale
 - baekjoon
+- programmers
+- HackerRank
 - Doit Coding_test
 - elice coding challenge
-- programmers
+- AlgoDale
