@@ -4,8 +4,8 @@
 
 
 ![baekjoon](https://img.shields.io/github/directory-file-count/hwstar-1204/Solve_Algorithm/baekjoon%20code?style=for-the-badge&label=baekjoon&cacheSeconds=3600)
-![programmers](https://img.shields.io/github/directory-file-count/hwstar-1204/Solve_Algorithm/programmers?style=for-the-badge&label=programmers&cacheSeconds=3600)
 ![LEETCODE](https://img.shields.io/github/directory-file-count/hwstar-1204/Solve_Algorithm/LEETCODE?style=for-the-badge&label=LEETCODE&cacheSeconds=3600)
+![programmers](https://img.shields.io/github/directory-file-count/hwstar-1204/Solve_Algorithm/programmers?style=for-the-badge&label=programmers&cacheSeconds=3600)
 ![HackerRank](https://img.shields.io/github/directory-file-count/hwstar-1204/Solve_Algorithm/HackerRank?style=for-the-badge&label=HackerRank&cacheSeconds=3600)
 
 
