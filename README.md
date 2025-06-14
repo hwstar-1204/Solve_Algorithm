@@ -13,3 +13,6 @@
 ![elice coding challenge](https://img.shields.io/github/directory-file-count/hwstar-1204/Solve_Algorithm/elice_coding_challenge?style=for-the-badge&label=elice_coding_challenge&cacheSeconds=3600)
 ![AlgoDale](https://img.shields.io/github/directory-file-count/hwstar-1204/Solve_Algorithm/AlgoDale?style=for-the-badge&label=AlgoDale&cacheSeconds=3600)
 ![SWEA](https://img.shields.io/github/directory-file-count/hwstar-1204/Solve_Algorithm/SWEA?style=for-the-badge&label=SWEA&cacheSeconds=3600)
+
+
+<img src="./images/LeetCode_2025_50days_solving.png" alt="LeetCode 2025 50days solving" width="300"/>
